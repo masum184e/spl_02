@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+        <!-- Car Image -->
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="Car Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/car_pic" />
+
+        <!-- Pickup Date and Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="start|left|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/car_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Toyota Axios"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/car_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.9"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rating_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:src="@drawable/ic_star" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pickup Date                                 Pickup Time"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/pickup_date_picker_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Select Date"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/Pickup_date_timePicker_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Select Time"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Return Date and Time -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Return Date                                 Return Time"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/return_date_picker_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Select Time"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/return_date_time_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Select Date"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:stretchColumns="1">
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/distance_feature_amount_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="Total Distance" />
+
+                <TextView
+                    android:id="@+id/distance_feature_amount_value_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="145dp"
+                    android:paddingTop="5dp"
+                    android:text="30km" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/total_amount_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="Number of Passenger" />
+
+                <TextView
+                    android:id="@+id/total_amount_value_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="145dp"
+                    android:paddingTop="5dp"
+                    android:text="5" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/seats_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="Number of Stoppage" />
+
+                <TextView
+                    android:id="@+id/seats_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="145dp"
+                    android:paddingTop="5dp"
+                    android:text="5" />
+            </TableRow>
+        </TableLayout>
+        <!-- Additional Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Additional"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/additional_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="A/C"
+            android:inputType="none"
+            android:cursorVisible="false" />
+
+
+        <!-- Owner and Renter Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Owner Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/owner_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Owner"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:id="@+id/owner_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/car_pic"
+                    />
+
+                <TextView
+                    android:id="@+id/owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Karim Hossain"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/owner_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="karim@gmail.com"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Renter Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/renter_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Renter"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:id="@+id/renter_image"
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/car_pic" />
+
+                <TextView
+                    android:id="@+id/renter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Karim Hossain"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/renter_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="karim@gmail.com"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Availability Calendar -->
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="Payment Details"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/ac_feature_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="AC" />
+
+                <TextView
+                    android:id="@+id/ac_feature_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="145dp"
+
+                    android:text="20*5=100 ৳" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/distance_feature_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/distance_feature_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="145dp"
+                    android:text="100*30=3000 ৳"
+                    android:paddingTop="5dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/total_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="145dp"
+                    android:text="3100 ৳"
+                    android:paddingTop="5dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/advance_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advance Amount"
+                    android:paddingTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/advance_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="145dp"
+                    android:text="3100*50%=1600 ৳"
+                    android:paddingTop="5dp"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/advance_payment_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:backgroundTint="@color/green"
+                android:text="Complete Trip"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress NavigationFile -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.odyssey.fragments.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.odyssey.fragments.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.odyssey.fragments.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_request"
+        android:name="com.example.odyssey.fragments.RequestFragment"
+        android:label="@string/title_request"
+        tools:layout="@layout/fragment_request" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.odyssey.fragments.SettingFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_setting" />
+
+</navigation>

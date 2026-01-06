@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aqua_green">#00D98B</color>
+
+
+
+    <color name="green">#00D98B</color>
+    <color name="white">#EBEFEB</color>
+    <color name="black">#0E0E0E</color>
+    <color name="blue">#0E2BCD</color>
+    <color name="beauty">#AA8686</color>
+</resources>

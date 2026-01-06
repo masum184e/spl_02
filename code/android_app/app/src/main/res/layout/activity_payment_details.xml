@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="Odyssey"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!-- Details -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        >
+
+        <TableRow>
+            <TextView
+                android:id="@+id/pickup_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup Date and Time:" />
+
+            <TextView
+                android:id="@+id/pickup_date_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="110dp"
+                android:text="01 Sept, 2020" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/dropoff_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return Date and Time: " />
+
+            <TextView
+                android:id="@+id/dropoff_date_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="110dp"
+                android:text="01 Jan, 2020" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/total_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Duration:" />
+
+            <TextView
+                android:id="@+id/total_duration_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="110dp"
+                android:text="00 Hour" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/total_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Distance:" />
+
+            <TextView
+                android:id="@+id/total_distance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="110dp"
+                android:text="00 KM" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount:" />
+
+            <TextView
+                android:id="@+id/total_amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="110dp"
+                android:text="00 ৳" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/send_req_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/aqua_green"
+            android:text="Send Request"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#BD3636"
+            android:text="Cancel"
+            android:layout_marginStart="10sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

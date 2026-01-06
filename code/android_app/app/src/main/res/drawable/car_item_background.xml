@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Background color -->
+            <solid android:color="#d1d1e0" />
+
+            <!-- Border color and width -->
+            <stroke
+                android:width="1dp"
+                android:color="#DDDDDD" />
+
+            <!-- Corner radius -->
+            <corners android:radius="0dp" />
+
+            <!-- Padding -->
+            <padding
+                android:left="6dp"
+                android:top="6dp"
+                android:right="6dp"
+                android:bottom="6dp" />
+
+            <!-- Shadow -->
+            <size
+                android:width="0dp"
+                android:height="0dp" />
+        </shape>
+    </item>
+</selector>

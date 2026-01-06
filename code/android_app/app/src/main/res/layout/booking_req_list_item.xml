@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hasan A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pickup_date"
+        app:layout_constraintEnd_toStartOf="@+id/pickup_date"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pickup_date" />
+
+    <TextView
+        android:id="@+id/pickup_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="14 May, 2024"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/action_container"
+        app:layout_constraintEnd_toStartOf="@+id/action_container"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/user_name"
+        app:layout_constraintTop_toTopOf="@+id/action_container" />
+
+    <LinearLayout
+        android:id="@+id/action_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pickup_date"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/pending_btn"
+            android:layout_width="80dp"
+            android:padding="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/green"
+            android:text="Pending"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/accept_btn"
+            android:layout_width="80dp"
+            android:padding="0dp"
+            android:visibility="gone"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/green"
+            android:text="Accept"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/decline_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#BD3636"
+            android:padding="0dp"
+            android:text="Decline"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
